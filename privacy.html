@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — LoyaltyScan</title>
+<meta name="description" content="LoyaltyScan Privacy Policy — what data the app stores, how it's used, and your choices.">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS 4 — keep this in sync with the ID on index.html
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #10152a;
+    --surface: #1a2140;
+    --surface-light: #232b52;
+    --gold: #e8b54a;
+    --gold-soft: #f2ce7a;
+    --text: #f4f2ec;
+    --text-muted: #9aa3c7;
+    --border: rgba(244,242,236,0.09);
+    --radius: 18px;
+  }
+
+  *{ box-sizing: border-box; margin: 0; padding: 0; }
+
+  body{
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(232,181,74,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at -10% 40%, rgba(35,43,82,0.5), transparent 60%);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--gold-soft); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+
+  .wrap{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  header{ padding: 30px 0 0; }
+  .nav{ display:flex; align-items:center; justify-content: space-between; }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:18px;
+    color: var(--text);
+  }
+  .logo-mark{
+    width:28px; height:28px; border-radius:8px;
+    background: linear-gradient(135deg, var(--gold-soft), var(--gold) 70%);
+    position:relative; flex-shrink:0;
+  }
+  .logo-mark::after{
+    content:""; position:absolute; inset: 8px 6px auto 6px; height:2px;
+    background: rgba(16,21,42,0.55); border-radius:2px;
+    box-shadow: 0 5px 0 rgba(16,21,42,0.35);
+  }
+  .back{
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+
+  main{ padding: 56px 0 80px; }
+
+  .eyebrow{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display:block;
+    margin-bottom: 14px;
+  }
+
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(30px, 4vw, 40px);
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+
+  .updated{ color: var(--text-muted); font-size: 14px; margin-bottom: 44px; }
+
+  section{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 28px;
+    margin-bottom: 18px;
+  }
+
+  section h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: var(--gold-soft);
+  }
+
+  section p, section li{
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  section ul{ padding-left: 20px; margin-top: 8px; }
+  section li{ margin-bottom: 4px; }
+
+  section p + p{ margin-top: 10px; }
+
+  footer{
+    border-top: 1px solid var(--border);
+    padding: 26px 0 40px;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="nav">
+    <a class="logo" href="/"><span class="logo-mark"></span> LoyaltyScan</a>
+    <a class="back" href="/">&larr; Back to home</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <span class="eyebrow">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 3 July 2026</p>
+
+  <p style="color:var(--text-muted); font-size:15px; margin-bottom:36px;">
+    LoyaltyScan is developed by Pieter Santema. This policy explains what data the app collects, how it is used, and what your choices are.
+  </p>
+
+  <section>
+    <h2>What data the app stores</h2>
+    <p>LoyaltyScan stores your loyalty cards — store name, card number, barcode format, and optional colour preference — locally on your device. This data never leaves your device unless you explicitly enable iCloud backup (see below).</p>
+    <p>The app does not collect analytics, does not track usage behaviour, and does not create or require a user account.</p>
+  </section>
+
+  <section>
+    <h2>iCloud backup (optional, Pro)</h2>
+    <p>If you are a Pro subscriber and choose to enable iCloud backup in Settings, your card data is synced to your personal iCloud account. This data is:</p>
+    <ul>
+      <li>Stored in your own iCloud container (<code>iCloud.com.pietersantema.loyaltyscan</code>)</li>
+      <li>Accessible only to you and subject to Apple's iCloud privacy terms</li>
+      <li>Never accessed by the developer</li>
+    </ul>
+    <p>iCloud backup is off by default and can be toggled at any time in Settings &rarr; iCloud backup.</p>
+  </section>
+
+  <section>
+    <h2>Camera</h2>
+    <p>The app requests access to your camera solely to scan loyalty card barcodes. Camera images are processed on-device and are never stored or transmitted.</p>
+  </section>
+
+  <section>
+    <h2>Photo library</h2>
+    <p>Pro subscribers can import a barcode from a photo or screenshot. The selected image is processed on-device to extract the barcode value. The image itself is never stored by the app or transmitted anywhere.</p>
+  </section>
+
+  <section>
+    <h2>Purchases</h2>
+    <p>LoyaltyScan uses <a href="https://www.revenuecat.com" target="_blank" rel="noopener">RevenueCat</a> to process the one-time Pro purchase. RevenueCat receives your App Store receipt to verify the purchase. No payment details are ever visible to the app or the developer. RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+  </section>
+
+  <section>
+    <h2>Card sharing</h2>
+    <p>When you share a card using the Share button, LoyaltyScan creates a small file on your device containing the card's store name, card number, and barcode format. This file is shared directly device-to-device (for example, via AirDrop). It is not uploaded to any server.</p>
+  </section>
+
+  <section>
+    <h2>Data security</h2>
+    <p>All card data is stored locally using encrypted device storage. No data is transmitted to the developer or any third party, except for the purchase verification described above.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>LoyaltyScan does not knowingly collect any data from children under 13. The app does not collect personal data from any user.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a revised date at the top.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about privacy? Contact: <a href="mailto:ph.santema@gmail.com">ph.santema@gmail.com</a></p>
+  </section>
+</main>
+
+<footer class="wrap">
+  &copy; <span id="year"></span> LoyaltyScan. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
