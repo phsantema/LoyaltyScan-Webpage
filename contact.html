@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — LoyaltyScan</title>
+<meta name="description" content="Get in touch about LoyaltyScan — questions, feedback, or support.">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS 4 — keep this in sync with the ID on index.html
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LG3L0LZ1FW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LG3L0LZ1FW');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #10152a;
+    --surface: #1a2140;
+    --surface-light: #232b52;
+    --gold: #e8b54a;
+    --gold-soft: #f2ce7a;
+    --text: #f4f2ec;
+    --text-muted: #9aa3c7;
+    --border: rgba(244,242,236,0.09);
+    --radius: 18px;
+    --error: #e8735a;
+  }
+
+  *{ box-sizing: border-box; margin: 0; padding: 0; }
+
+  body{
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(232,181,74,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at -10% 40%, rgba(35,43,82,0.5), transparent 60%);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a{ color: var(--gold-soft); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+
+  .wrap{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  header{ padding: 30px 0 0; }
+  .nav{ display:flex; align-items:center; justify-content: space-between; }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:18px;
+    color: var(--text);
+  }
+  .logo-mark{
+    width:28px; height:28px; border-radius:8px;
+    background: linear-gradient(135deg, var(--gold-soft), var(--gold) 70%);
+    position:relative; flex-shrink:0;
+  }
+  .logo-mark::after{
+    content:""; position:absolute; inset: 8px 6px auto 6px; height:2px;
+    background: rgba(16,21,42,0.55); border-radius:2px;
+    box-shadow: 0 5px 0 rgba(16,21,42,0.35);
+  }
+  .back{
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+  }
+
+  main{ padding: 56px 0 80px; }
+
+  .eyebrow{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display:block;
+    margin-bottom: 14px;
+  }
+
+  h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(30px, 4vw, 40px);
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+
+  .intro{ color: var(--text-muted); font-size: 15.5px; max-width: 480px; margin-bottom: 40px; }
+
+  form{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+  }
+
+  .field{ margin-bottom: 20px; }
+  .field:last-of-type{ margin-bottom: 0; }
+
+  label{
+    display:block;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  input, select, textarea{
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    resize: vertical;
+  }
+
+  input:focus, select:focus, textarea:focus{
+    outline: none;
+    border-color: var(--gold);
+  }
+
+  textarea{ min-height: 130px; }
+
+  select{
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239aa3c7' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  button{
+    margin-top: 28px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--gold-soft), var(--gold) 75%);
+    color: #241a04;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  button:hover{ transform: translateY(-1px); box-shadow: 0 10px 26px -8px rgba(232,181,74,0.45); }
+  button:disabled{ opacity: .6; cursor: default; transform: none; box-shadow: none; }
+
+  .status{
+    margin-top: 18px;
+    font-size: 14px;
+    display: none;
+  }
+  .status.show{ display: block; }
+  .status.success{ color: #8fd19e; }
+  .status.error{ color: var(--error); }
+
+  footer{
+    border-top: 1px solid var(--border);
+    padding: 26px 0 40px;
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="nav">
+    <a class="logo" href="/"><span class="logo-mark"></span> LoyaltyScan</a>
+    <a class="back" href="/">&larr; Back to home</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <span class="eyebrow">Get in touch</span>
+  <h1>Contact</h1>
+  <p class="intro">Questions, feedback, or something not working right? Send a message below and it'll land straight in the inbox — no need to dig up an email address.</p>
+
+  <!-- ============================================================
+       FORM ENDPOINT: this posts to Formspree (free, no backend needed).
+       Replace YOUR_FORM_ID below with your real Formspree endpoint —
+       see the README for the 2-minute setup.
+       ============================================================ -->
+  <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="field">
+      <label for="email">Your email</label>
+      <input type="email" id="email" name="_replyto" required>
+    </div>
+    <div class="field">
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option value="Feedback">Feedback / suggestion</option>
+        <option value="Bug">Something's not working</option>
+        <option value="Pro purchase">Pro purchase question</option>
+        <option value="Privacy">Privacy question</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Send message</button>
+    <p class="status" id="form-status"></p>
+  </form>
+</main>
+
+<footer class="wrap">
+  &copy; <span id="year"></span> LoyaltyScan. All rights reserved.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  const button = form.querySelector('button');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    button.disabled = true;
+    button.textContent = 'Sending…';
+    status.className = 'status';
+
+    try{
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok){
+        status.textContent = "Thanks — your message is on its way. I'll get back to you soon.";
+        status.className = 'status show success';
+        form.reset();
+        if (typeof gtag === 'function') gtag('event', 'contact_form_submit');
+      } else {
+        status.textContent = "Something went wrong sending that. Try again, or check the form is set up correctly.";
+        status.className = 'status show error';
+      }
+    } catch(err){
+      status.textContent = "Couldn't reach the server — check your connection and try again.";
+      status.className = 'status show error';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Send message';
+    }
+  });
+</script>
+
+</body>
+</html>

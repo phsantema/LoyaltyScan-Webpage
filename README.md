@@ -52,11 +52,22 @@ Once GitHub detects the DNS is pointing correctly (back in Settings → Pages), 
 4. Open `index.html` and replace **both** occurrences of `G-XXXXXXXXXX` with your real ID (one in the `<script src=...>` tag, one in `gtag('config', ...)`).
 5. Commit and push the change.
 
+## 6. Set up the contact form (Formspree)
+
+The contact page (`contact.html`) uses [Formspree](https://formspree.io) to deliver messages to your inbox without ever showing your email address in the page — visitors fill in a form, Formspree emails you the submission.
+
+1. Go to [formspree.io](https://formspree.io) and sign up (free tier gives you 50 submissions/month, plenty for this).
+2. Create a new form, confirm your email address (the one messages should land in — this stays private, it's never shown on the site).
+3. Copy the endpoint it gives you, looks like `https://formspree.io/f/abc123xy`.
+4. Open `contact.html` and replace `YOUR_FORM_ID` in the `<form action="...">` line with your real endpoint.
+5. Commit and push. Submit a test message on the live site to confirm it arrives.
+
 ## What's already wired in
 
 - **Automatic page view tracking** via the GA4 snippet.
 - **Outbound click tracking**: clicking either store badge fires a `click_store_badge` GA4 event with a `store` parameter (`app_store` or `play_store`), so you can see landing-page-visit → store-click conversion in GA4 under Reports → Engagement → Events.
 - **Referrer tracking is automatic** — GA4 records where each visitor came from without extra setup.
+- **Contact form submission tracking**: a successful send fires a `contact_form_submit` GA4 event.
 
 ## Tracking where traffic comes from
 
